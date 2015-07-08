@@ -1,0 +1,32 @@
+{
+  "name": "taggify",
+  "version": "1.0.0",
+  "description": "Turn a textfield to a taggable field",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "gulp-jasmine-phantom": "^1.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noppanit/taggify.git"
+  },
+  "keywords": [
+    "taggify",
+    "tag"
+  ],
+  "author": "Noppanit Charassinvichai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noppanit/taggify/issues"
+  },
+  "homepage": "https://github.com/noppanit/taggify"
+}
