@@ -5,21 +5,21 @@
 	};
 
 	function create($theElement) {
-		var $input = $('<input></input>')
+		var $input = $('<input class="tag-input"></input>')
 			.attr('type', 'text')
 			.attr('autocomplete', 'off')
-			.css('border', 'none')
-			.css('outline', 'none')
 			.wrap('<li></li>');
 
 		$input.on('keyup', function(e) {
 			if (e.keyCode === 13) {
 				var tagText = $input.val();
-				var $span = $('<span class="tag-label"></span>');
+				if(tagText !== '') {
+					var $span = $('<span class="tag-label"></span>');
 
-				$span.text(tagText).wrap('<li class="tag-choice"></li>');
-				$theElement.prepend($span.parent());
-				$input.val('');
+					$span.text(tagText).wrap('<li class="tag-choice"></li>');
+					$theElement.prepend($span.parent());
+					$input.val('');
+				}
 			}
 		});
 
